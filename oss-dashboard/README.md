@@ -49,6 +49,7 @@ OSS Dashboard is a web application designed to track and visualize open-source p
 git clone https://github.com/yourusername/oss-dashboard.git
 cd oss-dashboard
 npm install
+npm install react-router-dom @mui/material @mui/icons-material @mui/lab @mui/x-date-pickers @emotion/react @emotion/styled recharts @date-io/date-fns
 npm start
 ```
 
