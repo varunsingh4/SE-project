@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 📊 **InsightTracker OSS**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OSS Dashboard is a web application designed to track and visualize open-source project metrics, including commits, pull requests, and issue resolution trends. The dashboard provides an **interactive UI** for project monitoring, label insights, and historical analysis.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### **1️⃣ Dashboard Overview**
+- Displays a high-level overview of all tracked **Open-Source Software (OSS)** projects.
+- Includes **search functionality** and **filter options**.
 
-### `npm start`
+### **2️⃣ Project Details Page**
+- Click on any project to see **detailed metrics**.
+- Displays **soft labels** assigned based on activity trends.
+- Provides **historical data insights** and **predictive analysis**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **3️⃣ Monthly Selector**
+- Allows users to **select a specific month** to view **historical soft labels**.
+- Displays **label insights** for each month.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **4️⃣ Time-Series Graphs**
+- Interactive graphs for:
+  - **Commits**
+  - **Pull Requests**
+  - **Issues**
+- Users can toggle between **weekly, monthly, and yearly views**.
 
-### `npm test`
+### **5️⃣ Label Insights**
+- Each project is assigned a **soft label** based on activity metrics.
+- Label categories:
+  - ✅ **Accelerating** - Rapid growth.
+  - 🔵 **Consolidating** - Moderate growth.
+  - ⚪ **Maintaining** - Stable operation.
+  - 🟡 **Plateauing** - Little to no growth.
+  - 🟠 **Declining** - Noticeable decline.
+  - 🔴 **Crisis** - Project at risk.
+  - 🟢 **Reviving** - Signs of recovery.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Material-UI
+- **Charts**: Recharts
+- **Routing**: React Router
+- **Backend (Future Implementation)**: Node.js, Express
+- **Database (Future Implementation)**: MongoDB or PostgreSQL
 
-### `npm run build`
+## ⚡ Installation Guide
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/yourusername/oss-dashboard.git
+cd oss-dashboard
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📌 NOTES
 
-### `npm run eject`
+### **🎨 UI Components**
+- **Dashboard**: Displays all projects with color-coded status labels.
+- **Click a project** to see **detailed insights**.
+- **Project Details**: Shows real-time project statistics.
+- **Displays interactive time-series graphs**.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **📊 Example Project Data**
+- The app currently uses **mock data**.
+- Future versions will fetch **real data from GitHub APIs**.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **🎯 Future Enhancements**
+- ✅ **Backend API Integration** (GitHub API for real-time tracking).
+- ✅ **User Authentication** (Login, user-specific dashboards).
+- ✅ **Customizable Reports** (Download project insights).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **🤝 Contribution Guide**
+1. **Fork the repository**.
+2. **Create a new branch**: `git checkout -b feature-branch`
+3. **Commit changes**: `git commit -m "Add feature"`
+4. **Push to GitHub**: `git push origin feature-branch`
+5. **Create a Pull Request**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Developed By:
+- **Hemang Singh**
+- [GitHub](https://github.com/Hemang14)
+- [LinkedIn](https://www.linkedin.com/in/hemang14/)
