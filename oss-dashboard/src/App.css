@@ -54,6 +54,15 @@ html, body, #root {
   background-color: #263238; /* Ensure the background is consistent */
 }
 
+/* Apply Palatino font globally */
+body {
+  font-family: 'Palatino', sans-serif;
+  background-color: #263238; /* Keeps the dark theme */
+  color: #fff; /* Ensures text remains visible */
+  margin: 0;
+  padding: 0;
+}
+
 
 #tsparticles {
   position: absolute;

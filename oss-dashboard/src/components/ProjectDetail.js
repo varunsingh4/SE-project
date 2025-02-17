@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { Paper, Typography, Chip, Box, MenuItem, Select } from '@mui/material';
 import TimeSeriesGraph from './TimeSeriesGraph'; // Assuming you have this component for rendering graphs
 import '../App.css';
 
 const ProjectDetail = () => {
   const { id } = useParams();
+  const location = useLocation();
+  const project = location.state?.project || {}; // Get project data from state or fallback
   const [selectedMonth, setSelectedMonth] = useState("2024-02"); // Default to the current month
 
    // Sample data for the graphs (Replace with real API data)
@@ -22,7 +24,8 @@ const ProjectDetail = () => {
     monthly: [
       { time: "Jan", commits: 100, pullRequests: 20, issues: 30 },
       { time: "Feb", commits: 120, pullRequests: 25, issues: 35 },
-      { time: "Mar", commits: 80, pullRequests: 18, issues: 28 }
+      { time: "Mar", commits: 80, pullRequests: 18, issues: 28 },
+      { time: "Mar", commits: 105, pullRequests: 28, issues: 38 }
     ],
     yearly: [
       { time: "2022", commits: 1200, pullRequests: 300, issues: 500 },
@@ -40,13 +43,13 @@ const ProjectDetail = () => {
       "2024-04": "Accelerating"
     };
   
-  const projectData = {
-    name: `Project ${id}`,
-    label: historicalLabels[selectedMonth] || "Unknown",
-    activity: 'Medium',
-    description: `Detailed description of Project ${id}, highlighting key objectives, current status, and future goals.`,
-    metrics: 'Commit rate: High, Issue resolution: Medium, PR merge speed: Fast'
-  };
+    const projectData = {
+      name: project.name || `Project ${id}`,
+      label: historicalLabels[selectedMonth] || "Unknown",
+      activity: 'Medium',
+      description: project.description || `Detailed description of Project ${id}.`,
+      metrics: 'Commit rate: High, Issue resolution: Medium, PR merge speed: Fast'
+    };
 
   // Define color coding for labels
   const getLabelColor = (label) => {
