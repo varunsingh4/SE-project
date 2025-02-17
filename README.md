@@ -1,2 +1,2 @@
-# SE-project
+# InsightTracker OSS
 SE project
